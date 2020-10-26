@@ -8,8 +8,9 @@ Exercício: Construa uma API que atenda os requisitos citados acima.
 
 vcaixa.dev
 
+ => http://localhost/vcaixa/api/v1/transacao/movimentar
+ 
 - registrar quando recebe algum dinheiro (entrada);
-
 
 {     
     "id_cliente": "String",
@@ -39,7 +40,7 @@ vcaixa.dev
 
 criar uma rota na API que devolvesse um objeto com o resumo da carteira com o saldo total e as movimentações do dia.
 
- => http://localhost/api/api/v1/carteira/mostrar
+ => http://localhost/vcaixa/api/v1/carteira/mostrar/id
 
 ***************************************************************************************
 
