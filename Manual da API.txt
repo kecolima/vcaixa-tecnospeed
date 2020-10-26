@@ -5,15 +5,15 @@ Documentação da API
 
 Métodos GET (consulta)
 
-http://localhost/vcaixa/api/v1/carteira/mostrar/id
+http://localhost/vcaixa-tecnospeed/api/v1/carteira/mostrar/id
 
 => url que traz o saldo total com as movimentações do dia do cliente, Deve passar como parâmetro o ID do cliente.
 
-http://localhost/vcaixa/api/v1/carteira/mostrarclientedata/id/data
+http://localhost/vcaixa-tecnospeed/api/v1/carteira/mostrarclientedata/id/data
 
 => url que traz o saldo total com as movimentações do dia do cliente, Deve passar como parâmetro o ID do cliente e uma DATA para filtragem.
 
-http://localhost/vcaixa/api/v1/carteira/mostrartodastransacoes
+http://localhost/vcaixa-tecnospeed/api/v1/carteira/mostrartodastransacoes
 
 => url que traz o saldo total com todas as movimentações do cliente.
 
@@ -21,7 +21,7 @@ http://localhost/vcaixa/api/v1/carteira/mostrartodastransacoes
 
 Métodos POST (inserção)
 
-http://localhost/vcaixa/api/v1/transacao/movimentar
+http://localhost/vcaixa-tecnospeed/api/v1/transacao/movimentar
 
 - registrar quando recebe algum dinheiro (entrada);
 
@@ -43,7 +43,7 @@ http://localhost/vcaixa/api/v1/transacao/movimentar
     "descricao":"String"
 }
 
-http://localhost/vcaixa/api/v1/categoria/criar
+http://localhost/vcaixa-tecnospeed/api/v1/categoria/criar
 
 {     
     "nome": "String"
@@ -53,4 +53,4 @@ http://localhost/vcaixa/api/v1/categoria/criar
 
 URL de teste (Cliente)
 
-http://localhost/vcaixa/cliente/cliente.php
+http://localhost/vcaixa-tecnospeed/cliente/cliente.php
