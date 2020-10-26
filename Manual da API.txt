@@ -1,0 +1,56 @@
+
+Documentação da API
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   
+
+Métodos GET (consulta)
+
+http://localhost/vcaixa/api/v1/carteira/mostrar/id
+
+=> url que traz o saldo total com as movimentações do dia do cliente, Deve passar como parâmetro o ID do cliente.
+
+http://localhost/vcaixa/api/v1/carteira/mostrarclientedata/id/data
+
+=> url que traz o saldo total com as movimentações do dia do cliente, Deve passar como parâmetro o ID do cliente e uma DATA para filtragem.
+
+http://localhost/vcaixa/api/v1/carteira/mostrartodastransacoes
+
+=> url que traz o saldo total com todas as movimentações do cliente.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   
+
+Métodos POST (inserção)
+
+http://localhost/vcaixa/api/v1/transacao/movimentar
+
+- registrar quando recebe algum dinheiro (entrada);
+
+{     
+    "id_cliente": "String",
+    "categoria":{"id":"String"},
+    "tipo": "1",
+    "valor":"Number",
+    "descricao":"String"
+}
+
+- pagar alguma conta (saída);
+
+{     
+    "id_cliente": "String",
+    "categoria":{"id":"String"},
+    "tipo": "2",
+    "valor":"Number",
+    "descricao":"String"
+}
+
+http://localhost/vcaixa/api/v1/categoria/criar
+
+{     
+    "nome": "String"
+}
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   
+
+URL de teste (Cliente)
+
+http://localhost/vcaixa/cliente/cliente.php
