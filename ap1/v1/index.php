@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
-require 'vendor/autoload.php';
+
 require_once 'classes/Carteira.php';
 require_once 'classes/Transacao.php';
 require_once 'classes/Categoria.php';
