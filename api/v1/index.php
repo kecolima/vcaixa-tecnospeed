@@ -1,9 +1,9 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
 
-require_once 'classes/Carteira.php';
-require_once 'classes/Transacao.php';
-require_once 'classes/Categoria.php';
+require_once 'classes/carteira.php';
+require_once 'classes/transacao.php';
+require_once 'classes/categoria.php';
 
 class Rest{
     
