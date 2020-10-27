@@ -34,7 +34,7 @@ class Rest{
                     if($retorno){
                         foreach($retorno as $retorno){
                             $categoria = array('id' => $retorno['id_categoria'],'name' => $retorno['nome_categoria']);                    
-                            $movimentacao[] = array('id' =>$retorno['id_categoria'],'data' => $retorno['data'],'categoria' => $categoria,'tipo' =>$retorno['tipo'],'valor' => $retorno['valor'],'descricao' => $retorno['descricao']);
+                            $movimentacao[] = array('data' => $retorno['data'],'id' =>$retorno['id'],'categoria' => $categoria,'tipo' =>$retorno['tipo'],'valor' => $retorno['valor'],'descricao' => $retorno['descricao']);
                         } 
                         return json_encode(array('status' => 'sucesso','saldoTotal' => $retorno['saldoTotal'],'movimentacoes' =>$movimentacao));
                     }else{
